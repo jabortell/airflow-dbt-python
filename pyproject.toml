@@ -23,7 +23,7 @@ dependencies = [
     "apache-airflow>=2.9,<4.0; python_version>='3.12' and python_version<'3.13'",
     "apache-airflow>=3.1,<4.0; python_version>='3.13'",
     "contextlib-chdir==1.0.2;python_version<'3.11'",
-    "dbt-core>=1.8.0,<2.0.0",
+    "dbt>2.0.0",
     "packaging>=20.0",
 ]
 
@@ -37,16 +37,16 @@ airflow-providers = [
     "apache-airflow-providers-google>=11.0.0",
     "apache-airflow-providers-ssh>=3.0.0",
 ]
-adapters = [
-    "dbt-bigquery>=1.8.0,<2.0.0",
-    "dbt-redshift>=1.8.0,<2.0.0",
-    "dbt-postgres>=1.8.0,<2.0.0",
-    "dbt-snowflake>=1.8.0,<2.0.0",
-    "dbt-spark[all]>=1.8.0,<2.0.0",
-]
-bigquery = [
-    "dbt-bigquery>=1.8.0,<2.0.0",
-]
+# adapters = [
+#     "dbt-bigquery>=1.8.0,<2.0.0",
+#     "dbt-redshift>=1.8.0,<2.0.0",
+#     "dbt-postgres>=1.8.0,<2.0.0",
+#     "dbt-snowflake>=1.8.0,<2.0.0",
+#     "dbt-spark[all]>=1.8.0,<2.0.0",
+# ]
+# bigquery = [
+#     "dbt-bigquery>=1.8.0,<2.0.0",
+# ]
 gcs = [
     "apache-airflow-providers-google>=11.0.0",
 ]
@@ -56,21 +56,21 @@ git = [
     # Until we can provide our own, exclude newer versions.
     "dulwich>=1.0.0,<1.2.0",
 ]
-postgres = [
-    "dbt-postgres>=1.8.0,<2.0.0",
-]
-redshift = [
-    "dbt-redshift>=1.8.0,<2.0.0",
-]
+# postgres = [
+#     "dbt-postgres>=1.8.0,<2.0.0",
+# ]
+# redshift = [
+#     "dbt-redshift>=1.8.0,<2.0.0",
+# ]
 s3 = [
     "apache-airflow-providers-amazon>=3.0.0",
 ]
-snowflake = [
-    "dbt-snowflake>=1.8.0,<2.0.0",
-]
-spark = [
-    "dbt-spark>=1.8.0,<2.0.0",
-]
+# snowflake = [
+#     "dbt-snowflake>=1.8.0,<2.0.0",
+# ]
+# spark = [
+#     "dbt-spark>=1.8.0,<2.0.0",
+# ]
 
 [dependency-groups]
 dev = [
